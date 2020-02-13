@@ -1,0 +1,22 @@
+@mixin superFlex() {
+  display: flex;
+}
+
+@mixin flexDirection() {
+	flex-direction: column;
+	justify-content: center;
+}
+
+@mixin widthE() {
+	width: 100%;
+}
+
+@mixin alignItems() {
+	align-items: center;
+	text-align: center;
+}
+
+@mixin spaceBetween() {
+	justify-content: space-between;
+	align-items: center;
+}

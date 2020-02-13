@@ -19,13 +19,13 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	width: 100%;
+	@include widthE();
 }
 
 /*HEADER + NAVIGATION*/
  
 header {
-	width: 100%;
+	@include widthE();
 	height: 800px;
 	background-image: url("../img/main-banner.jpg");
 	background-size: cover;
@@ -128,7 +128,7 @@ header {
 }
 
 .btn-down {
-	width: 100%;
+	@include widthE();
 	@include superFlex();
 	margin-top: 200px;
 	justify-content: center;
@@ -159,9 +159,8 @@ header {
 
 article .article-main {
 	@include flexDirection();
-	align-items: center;
+	@include alignItems();
 	width: 20%;
-	text-align: center;
 	@include superFlex();
 }
 
@@ -210,7 +209,7 @@ article .article-main {
 	background-image: url('../img/newsletter-background.jpg');
 	background-size: cover;
 	background-position: center;
-	width: 100%;
+	@include widthE();
 	height: 250px;
 	@include superFlex();
 	align-items: center;
@@ -244,11 +243,10 @@ article .article-main {
 
 .art-header {
 	width: 40%;
-	text-align: center;
 	margin-top: 100px;
 	@include superFlex();
 	@include flexDirection();
-	align-items: center;
+	@include alignItems();
 }
 
 .art-header h2 {
@@ -328,7 +326,7 @@ article .article-main {
 	@include superFlex();
 	@include flexDirection();
 	align-items: center;
-	width: 100%;
+	@include widthE();
 	height: 100%;
 	border-radius: 10px;
 	padding: 20px;
@@ -378,7 +376,7 @@ article .article-main {
 /*article-5*/
 
 .art-our-exp {
-	width: 100%;
+	@include widthE();
 	background-image: url('../img/testimonials-background.jpg');
 	background-position: center;
 	background-size: cover;
@@ -454,7 +452,7 @@ article .article-main {
 /*article-6*/
 
 .art-our-team {
-	width: 100%;
+	@include widthE();
 }
 
 .our-team {
@@ -464,7 +462,7 @@ article .article-main {
 }
 
 .our-team-content {
-	width: 100%;
+	@include widthE();
 	@include superFlex();
 	@include spaceBetween();
 	margin-top: 50px;
@@ -522,7 +520,7 @@ article .article-main {
 }
 
 .our-team-icons {
-	width: 100%;
+	@include widthE();
 	text-align: center;
 }
 
@@ -559,9 +557,8 @@ article .article-main {
 	margin: 50px auto;
 	margin-bottom: 0px;
 	height: 20px;
-	text-align: center;
 	@include superFlex();
-	align-items: center;
+	@include alignItems();
 }
 
 .dot {
@@ -584,7 +581,7 @@ article .article-main {
 /*article-7*/
 
 .art-say-hello {
-	width: 100%;
+	@include widthE();
 	background-image: url('../img/contact-background.jpg');
 	background-position: center;
 	background-size: cover;
@@ -610,11 +607,11 @@ article .article-main {
 }
 
 .say-hello-content form {
-	width: 100%;
+	@include widthE();
 }
 
 .say-hello-inputs {
-	width: 100%;
+	@include widthE();
 	@include superFlex();
 	@include spaceBetween();
 }
@@ -629,7 +626,7 @@ article .article-main {
 }
 
 .say-hello-msg textarea {
-	width: 100%;
+	@include widthE();
 	height: 200px;
 	padding: 12px 30px; 
 	border-radius: 10px;
@@ -643,7 +640,7 @@ article .article-main {
 	@include superFlex();
 	@include spaceBetween();
 	padding: 0px;
-	width: 100%;
+	@include widthE();
 }
 
 .say-hello-footer button {
@@ -689,7 +686,7 @@ article .article-main {
 /*footer*/
 
 .art-footer {
-	width: 100%;
+	@include widthE();
 	background-color: #3b444d;
 }
 
@@ -702,7 +699,7 @@ article .article-main {
 @media screen and (min-width: 720px) and (max-width: 1280px) {
 
 	.cont-responsive {
-		width: 100%;
+		@include widthE();
 		margin: 0 auto;
 		@include superFlex();
 	}
@@ -712,7 +709,7 @@ article .article-main {
 	}
 
 	.our-works-content {
-		width: 100%;
+		@include widthE();
 		height: 1200px;
 		justify-content: space-around;
 		align-items: center;
@@ -764,21 +761,21 @@ article .article-main {
 	.cont-responsive {
 		@include superFlex();
 		flex-wrap: wrap;
-		width: 100%;
+		@include widthE();
 		margin: 0 auto;	
 	}
 
 	header {
 		height: auto;
 		padding: 20px 0px;
-		width: 100%;
+		@include widthE();
 	}
 
 	.header-cnt {
 		margin: 0 auto;
 		padding: 0px 10px;
 		height: 100%;
-		width: 100%;	
+		@include widthE();	
 	}
 
 	.header-btns {
@@ -795,10 +792,9 @@ article .article-main {
 	article .article-main {
 		width: 40%;
 		width: 200px;
-		text-align: center;
+		@include alignItems();
 		@include superFlex();
 		@include flexDirection();
-		align-items: center;
 		margin: 50px 5px;
 	}
 
@@ -810,7 +806,7 @@ article .article-main {
 	}
 
 	.our-works-content {
-		width: 100%;
+		@include widthE();
 		height: auto;
 		flex-direction: column;
 		@include spaceBetween();
@@ -875,7 +871,7 @@ article .article-main {
 @media screen and (max-width: 449px) {
 
 	.cont-responsive {
-		width: 100%;
+		@include widthE();
 		margin: 0 auto;
 		@include superFlex();
 		flex-wrap: wrap;
@@ -896,7 +892,6 @@ article .article-main {
 
 	article .article-main {
 		width: 60%;
-		
 		text-align: center;
 		@include superFlex();
 		flex-direction: column;

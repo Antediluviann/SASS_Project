@@ -133,8 +133,8 @@ article .article-main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20%;
   text-align: center;
+  width: 20%;
   display: flex; }
 
 .img-art {
@@ -202,12 +202,12 @@ article .article-main {
 
 .art-header {
   width: 40%;
-  text-align: center;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .art-header h2 {
   font-size: 2rem;
@@ -473,9 +473,9 @@ article .article-main {
   margin: 50px auto;
   margin-bottom: 0px;
   height: 20px;
-  text-align: center;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .dot {
   width: 10px;
@@ -670,11 +670,11 @@ article .article-main {
   article .article-main {
     width: 40%;
     width: 200px;
+    align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 50px 5px; }
 
   .img-art {

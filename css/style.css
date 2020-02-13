@@ -8,7 +8,8 @@
 .cont-responsive {
   width: 70%;
   margin: 0 auto;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 body {
   font-family: 'Open Sans', sans-serif;
